@@ -1,0 +1,175 @@
+App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.closeButton{
+  color: red;
+  position: absolute;
+  right: 3%;
+}
+
+.dynamicCard{
+  background-color: #ffffff;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+.leftbutton{
+  position: absolute;
+  top:50%;
+  left: 2%;
+  background-color: salmon;
+}
+.rightbutton{
+  position: absolute;
+  top:50%;
+  right:2%;
+  background-color: salmon;
+
+}
+
+.back-to-top {
+  z-index: 10;
+  position: fixed;
+  bottom: 2%;
+  left: 10%;
+  display: flex;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card-container { 
+  width: 100vw; 
+  height: 100vh; 
+  background-color: burlywood; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+} 
+.child-div { 
+  height: 100%; 
+  width: 60%; 
+  margin: 0 20px; 
+} 
+
+
+.card{ 
+  width: 100%;
+  height:66vh ;
+  padding: 10px;
+ }
+
+ .card-button{
+   position: absolute;
+   right :5%;
+   bottom:5%;
+ }
+
+ .text-boundary{
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 3.6em;
+  line-height: 1.8em;
+ }
+
+ #tooltip
+{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  font-size: 12px;
+  background-color: burlywood;
+  display: inline-block;
+}
+
+#tooltip.bottom .tooltip-arrow
+{
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+
+.dynamicCard{
+  height:100vh;
+  max-width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+ @media only screen and (max-width: 600px) {
+  
+  .child-div { 
+    height: 100%; 
+    width: 100%; 
+    margin: 0; 
+  } 
+  .text-boundary{
+    display: block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 9.6em;
+    line-height: 1.8em;
+   }
+
+   .dynamicCard{
+    height:100vh;
+    max-width: 100vw;
+  }
+  
+}
+
+
